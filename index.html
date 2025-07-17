@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pupa Design</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+
+    .feather {
+      position: absolute;
+      top: -200px;
+      width: 120px;
+      opacity: 0.8;
+      animation: fall 6s ease-in forwards;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-200px) rotate(0deg);
+        left: 50%;
+      }
+      50% {
+        transform: translateY(50vh) rotate(15deg);
+        left: 48%;
+      }
+      100% {
+        transform: translateY(110vh) rotate(-10deg);
+        left: 52%;
+        opacity: 0;
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>We’re a small, independent design studio that believes elegance and emotional resonance still matter.<br><br>
+    Our work isn’t online—but it’s out there. Maybe you've held it in your hands.<br><br>
+    This page is just a door. If you’d like to step in, <a href="mailto:info@pupadesign.com">say hello</a>.</h1>
+    <img class="feather" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/White_Feather_PNG_Transparent_Image.png/800px-White_Feather_PNG_Transparent_Image.png" alt="Falling Feather" />
+    <div class="footer">© Pupa Design</div>
+  </div>
+</body>
+</html>
